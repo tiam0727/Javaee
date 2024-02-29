@@ -2,8 +2,8 @@ package DynamicBinding;
 
 /**
  * Java动态绑定机制：
- * 1. 当调用对象是，该方法会和该对象的内存地址/运行类型绑定
- * 2. 当调用对象属性时，没有动态绑定机制，那里声明，那里使用
+ * 1. 当调用对象方法时，该方法会和该对象的内存地址/运行类型绑定
+ * 2. 当调用对象属性时，没有动态绑定机制，那里声明，那里使用，按照作用域+继承机制
  */
 public class DynamicBinding {
     public static void main(String[] args) {
@@ -11,6 +11,10 @@ public class DynamicBinding {
         A a = new B();//向上转型
         System.out.println(a.sum());//?40 -> 30
         System.out.println(a.sum1());//?30-> 20
+        System.out.println("a="+a.getI());
+        System.out.println(a.i);
+        B c = (B) a;
+        System.out.println(c.i);
     }
 }
 
