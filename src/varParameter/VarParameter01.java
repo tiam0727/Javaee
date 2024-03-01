@@ -1,4 +1,4 @@
-package VarParameter;
+package varParameter;
 
 public class VarParameter01 {
 

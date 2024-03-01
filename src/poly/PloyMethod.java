@@ -1,4 +1,4 @@
-package Poly;
+package poly;
 
 public class PloyMethod {
     public static void main(String[] args) {

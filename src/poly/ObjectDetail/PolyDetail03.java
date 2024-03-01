@@ -1,4 +1,4 @@
-package Poly.ObjectDetail;
+package poly.ObjectDetail;
 
 public class PolyDetail03 {
     public static void main(String[] args) {

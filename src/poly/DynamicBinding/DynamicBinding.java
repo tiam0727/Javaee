@@ -1,4 +1,4 @@
-package DynamicBinding;
+package poly.DynamicBinding;
 
 /**
  * Java动态绑定机制：

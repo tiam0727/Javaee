@@ -1,4 +1,4 @@
-package VarParameter;
+package varParameter;
 
 /**
  * @author: 徐杰

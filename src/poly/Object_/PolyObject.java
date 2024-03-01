@@ -1,4 +1,4 @@
-package Poly.Object_;
+package poly.Object_;
 
 public class PolyObject {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Poly.Object_;
+package poly.Object_;
 
 public class Dog extends Animal {
 

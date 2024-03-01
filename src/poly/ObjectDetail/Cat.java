@@ -1,4 +1,4 @@
-package Poly.ObjectDetail;
+package poly.ObjectDetail;
 
 public class Cat extends Animal {
     public void eat() {//方法重写
