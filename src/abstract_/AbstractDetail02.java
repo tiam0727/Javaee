@@ -2,6 +2,13 @@ package abstract_;
 
 public class AbstractDetail02 {
     public static void main(String[] args) {
+
+//        D d = new D(1) {
+//            @Override
+//            public void hello() {
+//                System.out.println("a");
+//            }
+//        };
         System.out.println("hello");
     }
 }
@@ -28,6 +35,11 @@ class G extends E {
 //抽象类的本质还是类，所以可以有类的各种成员
 abstract class D {
     public int n1 = 10;
+
+    public D(int n1) {
+        this.n1 = n1;
+    }
+
     public static String name = "韩顺平教育";
 
     public void hi() {
