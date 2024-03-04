@@ -40,6 +40,7 @@ class Outer04 {
          */
         //7. jdk底层在创建匿名内部类Outer04$1，立即马上就创建了Outer04$1实例，并把地址返回给tiger
         A tiger = new A() {
+
             @Override
             public void cry() {
                 System.out.println("老虎叫--------");
@@ -48,6 +49,39 @@ class Outer04 {
         System.out.println("tiger的运行类型" + tiger.getClass());
         tiger.cry();
 
+        //演示基于类的匿名内部类
+        //b
+        /**
+         * 分析：
+         * 1. jack的运行类型为Outer04$2 ,编译类型为Father。相当于
+         *  class Outer02$2 extend Father{
+         *      @Override
+         *      public void test() {
+         *          System.out.println("匿名内部类重写了test方法");
+         *      }
+         *  }
+         * 2. lucy的运行类型为Father,编译类型为Father
+         *
+         * 3. 同时直接返回了匿名内部类的Outer04$2对象
+         * 4. 注意("jack") 参数列表会传递给构造器
+         */
+        Father jack = new Father("jack") {
+            @Override
+            public void test() {
+                System.out.println("匿名内部类重写了test方法");
+            }
+        };
+        Father lucy = new Father("lucy");
+        System.out.println("jack的运行类型 "+jack);
+        System.out.println("lucy的运行类型 "+lucy);
+
+        //基于抽象类的匿名内部类
+        Animal animal = new Animal(){
+            @Override
+            void eat() {
+                System.out.println("小狗吃------");
+            }
+        };
     }
 }
 
@@ -67,4 +101,14 @@ class Father {
     public Father(String name) {
         this.name = name;
     }
+    public void test(){
+
+    }
 }
+
+abstract  class Animal{
+    void eat(){
+        System.out.println("吃");
+    }
+}
+
