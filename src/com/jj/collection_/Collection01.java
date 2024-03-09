@@ -1,6 +1,8 @@
 package com.jj.collection_;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -9,6 +11,7 @@ import java.util.Map;
  * @dateTime: 2024/3/9 22:21
  **/
 public class Collection01 {
+    @SuppressWarnings("all")
     public static void main(String[] args) {
         //Collection
         //Map
@@ -19,5 +22,13 @@ public class Collection01 {
          *      Collection接口有两个重要的子接口 List Set，他们的实现子类都是单列集合
          *      Map接口的实现子类是双列结合
          */
+        ArrayList arrayList = new ArrayList();
+        arrayList.add("jack");
+        arrayList.add("tom");
+
+        HashMap hashMap = new HashMap();
+        hashMap.put("N1","Beijing");
+        hashMap.put("N2","Shanghai");
+
     }
 }
