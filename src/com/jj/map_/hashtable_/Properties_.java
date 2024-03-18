@@ -1,4 +1,4 @@
-package com.jj.collection_.map_.hashtable_;
+package com.jj.map_.hashtable_;
 
 import java.util.Properties;
 
