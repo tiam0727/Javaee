@@ -8,7 +8,7 @@ package com.jj.generic;
 public class Generic {
     public static void main(String[] args) {
         //注意，特别强调： E 具体的数据类型在定义 Person 对象的时候指定,即在编译期间，就确定 E 是什么类型
-        Person<String> person = new Person("韩顺平教育");
+        Person<String> person = new Person(" tpc");
         person.show(); //String
         /*
         你可以这样理解，上面的 Person 类
