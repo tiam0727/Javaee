@@ -27,5 +27,6 @@ public class Map_ {
         // 通过 get 方法，传入 key ,会返回对应的 value
         System.out.println(map.get("no2"));//张无忌
         System.out.println("map=" + map);
+        System.out.println(map.getClass());
     }
 }
