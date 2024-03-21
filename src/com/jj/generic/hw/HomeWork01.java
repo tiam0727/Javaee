@@ -21,6 +21,10 @@ public class HomeWork01 {
         userDAO.save("002", new User("Jim", 2, 15));
         userDAO.save("003", new User("John", 3, 20));
         System.out.println(userDAO.list());
+
+        userDAO.delete("001");
+        System.out.println("============修改后=========");
+        System.out.println(userDAO.list());
     }
 
 }
