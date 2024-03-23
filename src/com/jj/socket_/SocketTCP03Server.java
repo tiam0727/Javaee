@@ -38,7 +38,9 @@ public class SocketTCP03Server {
         bufferedWriter.newLine();//插入一个换行，表示输入结束
         bufferedWriter.flush();//将内容刷入到socket数据通道
 
+        //关闭外层流和socket
         bufferedWriter.close();
+        bufferedReader.close();
         socket.close();
         serverSocket.close();
 
